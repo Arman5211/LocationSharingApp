@@ -3,8 +3,8 @@ package com.example.locationsharingapp.Viewmodel
 import android.content.Context
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
+import com.example.locationsharingapp.Model.User
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.auth.User
 
 class FirestoreViewModel: ViewModel() {
     private val firestore = FirebaseFirestore.getInstance()

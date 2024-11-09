@@ -2,13 +2,14 @@ package com.example.locationsharingapp
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.locationsharingapp.Viewmodel.AuthenticationViewModel
+import com.example.locationsharingapp.Viewmodel.FirestoreViewModel
 import com.example.locationsharingapp.Viewmodel.LocationViewModel
 import com.example.locationsharingapp.databinding.FragmentProfileBinding
 import com.example.locationsharingapp.view.LoginActivity
@@ -19,7 +20,7 @@ class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
     private lateinit var authViewModel: AuthenticationViewModel
-    private lateinit var firestoreViewModel: FirestoreViewModel1
+    private lateinit var firestoreViewModel: FirestoreViewModel
     private lateinit var locationViewModel: LocationViewModel
     private val firebaseAuth = FirebaseAuth.getInstance()
 
@@ -31,7 +32,7 @@ class ProfileFragment : Fragment() {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
 
         authViewModel = ViewModelProvider(this).get(AuthenticationViewModel::class.java)
-        firestoreViewModel = ViewModelProvider(this).get(FirestoreViewModel1::class.java)
+        firestoreViewModel = ViewModelProvider(this).get(FirestoreViewModel::class.java)
         locationViewModel = ViewModelProvider(this).get(LocationViewModel::class.java)
 
 

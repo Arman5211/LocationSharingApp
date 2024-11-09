@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/friendsFragment"
-        android:name="com.example.nsda_31.FriendsFragment"
+        android:name="com.example.locationsharingapp.FriendsFragment"
         android:label="fragment_friends"
         tools:layout="@layout/fragment_friends" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.nsda_31.ProfileFragment"
+        android:name="com.example.locationsharingapp.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

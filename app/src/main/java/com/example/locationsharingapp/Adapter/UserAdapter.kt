@@ -7,7 +7,7 @@ import com.example.locationsharingapp.Model.User
 import com.example.locationsharingapp.databinding.ItemUserBinding
 
 class UserAdapter(private var userList: List<User>): RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
-    class UserViewHolder(private val binding: ItemUserBinding): RecyclerView.ViewHolder(binding.root){
+    class UserViewHolder(private val binding: ItemUserBinding):RecyclerView.ViewHolder(binding.root){
         fun bind(user: User){
             binding.apply {
                 binding.displayNameTxt.text = user.displayName
@@ -32,7 +32,7 @@ class UserAdapter(private var userList: List<User>): RecyclerView.Adapter<UserAd
         holder.bind(user)
 
     }
-    fun updateData(newList: List<com.google.firebase.firestore.auth.User>) {
+    fun updateData(newList: List<User>) {
         userList = newList
         notifyDataSetChanged()
     }
