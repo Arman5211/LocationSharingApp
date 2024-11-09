@@ -19,7 +19,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#832196F3"
+            android:background="#D6C9C7"
             android:orientation="vertical"
             android:padding="28dp">
 
@@ -106,11 +106,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="#00000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
                 android:text="Update Profile"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 app:cornerRadius="10dp"
-                app:strokeColor="#000000"
+                app:strokeColor="#61000000"
                 app:strokeWidth="1dp" />
 
             <LinearLayout
